@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/StreakContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Guess Game"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/StreakBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="View Streaks"
+                android:layout_weight="1"
+                app:backgroundTint="@color/purple_500"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/guessHistoryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guess #1          :    Star\nGuess #1 Check    :    xxxx\nGuess #2          :    dogs\nGuess #2 Check    :    xoxx\nGuess #3          :    most\nGuess #3 Check    :    xoxx"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+
+
+        <!-- Book TextView -->
+        <TextView
+            android:id="@+id/ResultTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/WordEnterTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Section -->
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom">
+            <EditText
+                android:id="@+id/editTextGuess"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter 4 letter guess here"
+                android:inputType="text"
+                android:maxLength="4"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/guessBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guess"
+                app:cornerRadius="8dp"
+                app:backgroundTint="@color/purple_500"
+                android:layout_marginStart="8dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resetBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                app:backgroundTint="@color/purple_500"
+                app:cornerRadius="8dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
