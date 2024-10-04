@@ -22,7 +22,6 @@ The following **optional** features are implemented:
 
 
 ## Gameplay Video
-![Wordle Game](gif/wordle_game.gif)  
 <img src='gif/wordle_game.gif' title='Wordle Game Video' width='600' alt='Wordle Game Video' />
 
 
